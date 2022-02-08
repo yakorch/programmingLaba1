@@ -35,7 +35,7 @@ def geocode(address: str):
     Returns:
         tuple: tuple of float numbers
     >>> geocode("New York, USA")
-    (40.71455000000003, -74.00713999999994)
+    (40.71455000000003, -74.00713999999994, 'New York')
     """
     i = 0
     try:
@@ -46,7 +46,7 @@ def geocode(address: str):
         location = geocoders[i].geocode(address)
         if location is not None:
             return location.latitude, location.longitude, location.address
-    except:
+    except AttributeError:
         return None
 
 
@@ -122,7 +122,7 @@ def get_coords_from_pairs(movies: list):
     Returns a differed list of tuples where second element - location
     is substituted with its coordinates on the globe
     >>> get_coords_from_pairs(create_pairs(get_movies("movieshere"))[100:102])[0]
-    ('#VanLifeAttila', (53.06746000000004, -121.51612999999998))
+    ('#VanLifeAttila', (53.06746000000004, -121.51612999999998, 'Barkerville, Cariboo, British Columbia'))
     """
     return [(el[0], geocode(el[1])) for el in movies]
 
@@ -132,7 +132,7 @@ def calc_closest_dist(movies: list, my_pos: tuple):
     Retunrs a sorted list of tuples (movie_name, movie_location)
     by closest location to 'my_pos'
     >>> calc_closest_dist(get_coords_from_pairs(create_pairs(get_movies("movieshere"))[100:102]), (43, -120))[0]
-    ('#VanLifeAttila', (49.260380000000055, -123.11335999999994))
+    ('#VanLifeAttila', (49.260380000000055, -123.11335999999994, 'Vancouver, British Columbia'))
     """
     return sorted(movies,
                   key=lambda x: distance_two_points(
