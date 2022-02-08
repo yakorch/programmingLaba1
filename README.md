@@ -5,7 +5,7 @@ A module that creates HTML file - a map with closest and furthest locations wher
 were filmed when year, coordinates, and path to a file given.
 
 A file with 1000+ films for checking the correctness of the code is attached.
-Doctests rely on that file too - to check doctests, you should download the file too.
+Doctests rely on that file - to check doctests, you should download the file.
 
 The map contains 3 layers:
   first layer - all films from a given year (blue marks)
