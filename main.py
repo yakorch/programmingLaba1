@@ -29,7 +29,7 @@ geocoders = [arcgis, nominatim]
 @lru_cache(maxsize=None)
 def geocode(address: str):
     """
-    Returns a tuple of latitude and longtitude of an address
+    Returns a tuple of latitude and longitude of an address
     Args:
         address (str): an address of a location
     Returns:
@@ -154,7 +154,7 @@ def create_html(movies: list, my_pos: tuple, year: int, far_movies: list,
     {}<br>
     Coordinates:<br>
     latitude: {}<br>
-    longtitude: {}<br>
+    longitude: {}<br>
     Place:<br>
     {}
     """
