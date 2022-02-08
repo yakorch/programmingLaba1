@@ -19,6 +19,6 @@ argparse requires 4 arguments: year, latitude, longitude, the path to a file
 >>> python main.py 2009 40 43 movieshere
 
 This launching will create a file 'filmsmap.html'.
-Example of running this file: ![Знімок екрана 2022-02-08 о 10 55 13](https://user-images.githubusercontent.com/92575094/152952113-41e9278a-7403-4265-82ec-54947e3c7bea.png)
+Example of running this file: ![Знімок екрана 2022-02-08 о 15 33 30](https://user-images.githubusercontent.com/92575094/152997662-0cb863ee-ee09-4c3c-a4eb-622b3af9ec92.png)
 
 The approximate work time needed for a program with this input is 30 seconds.
