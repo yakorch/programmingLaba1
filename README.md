@@ -8,9 +8,9 @@ A file with 1000+ films for checking the correctness of the code is attached.
 Doctests rely on that file - to check doctests, you should download the file.
  
 The map contains 3 layers:
-  first layer - all films from a given year (blue marks)
-  second layer - 10 closest filming locations from a given year (dark purple marks)
-  third layer - 10 furthest filming locations from a given year (red marks)
+  first layer - all films from a given year (blue marks);
+  second layer - 10 closest filming locations from a given year (dark purple marks);
+  third layer - 10 furthest filming locations from a given year (red marks).
   
   Each mark contains a film name, coordinates, and a location: ![Знімок екрана 2022-02-08 о 10 45 39](https://user-images.githubusercontent.com/92575094/152950611-17da3243-de54-4082-b09c-5f4af8e33fe7.png)
 
